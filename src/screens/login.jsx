@@ -26,6 +26,12 @@ function Login() {
           </TouchableOpacity>
         </View>
       </View>
+
+      <View style={styles.footer}>
+        <TouchableOpacity >
+          <Text style={styles.footerText}>Criar minha conta</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -34,10 +40,11 @@ const styles1 = StyleSheet.create({
   btn: {
     width: '100%',
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 6,
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   btnText: {
     color: '#fff',
     fontSize: FONT_SIZE.medium,

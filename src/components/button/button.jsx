@@ -1,7 +1,7 @@
 import { TouchableOpacity, Text } from "react-native";
 
-function Button() {
+function Button(props) {
     return <TouchableOpacity style={styles.btn}>
-        <Text>Acessar</Text>
+        <Text style={styles.texts}>{props.texts}</Text>
     </TouchableOpacity>
 }
