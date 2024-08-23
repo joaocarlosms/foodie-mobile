@@ -1,4 +1,4 @@
-import { COLORS, FONT_SIZE } from "../constants/theme";
+import { COLORS, FONT_SIZE } from "../../constants/theme";
 
 export const styles = {
     container: {
@@ -15,15 +15,15 @@ export const styles = {
 
     formGroup: {
         width: "100%",
-        marginTop: 50,
-        marginBottom: 40
+        marginTop: 25,
+        marginBottom: 50
     },
 
     footer: {
         width: "100%",
         position: "absolute",
         bottom: 0,
-        marginBottom: 50
+        marginBottom: 45
     },
 
     footerText: {
