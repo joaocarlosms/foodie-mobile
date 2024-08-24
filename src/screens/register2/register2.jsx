@@ -1,36 +1,48 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { styles } from './register.style';
+import { styles } from './register2.style';
 import Header from '../../components/header/header';
 import TextBox from '../../components/textbox/textbox';
 import { COLORS, FONT_SIZE } from '../../constants/theme';
 
-function Register() {
+function Register2() {
   return (
     <View style={styles.container}>
-      <Header text="Criar sua conta" />
+      <Header text="Informe seu endereço" />
 
       <View style={styles.formGroup}>
-        <View style={styles.form}>
-          <TextBox label="Nome Completo" />
+        <View style={styles.formHorizontal}>
+          <View style={styles.form70}> 
+            <TextBox label="Endereço" />
+          </View>
+
+          <View style={styles.form30}>
+            <TextBox label="Compl." />
+          </View>
         </View>
 
         <View style={styles.form}>
-          <TextBox label="E-mail" />
+          <TextBox label="Bairro" />
+        </View>
+
+        <View style={styles.formHorizontal}>
+          <View style={styles.form70}> 
+            <TextBox label="Cidade" />
+          </View>
+
+          <View style={styles.form30}>
+            <TextBox label="UF" />
+          </View>
         </View>
 
         <View style={styles.form}>
-          <TextBox label="Escolha uma senha" isPassword={true} />
-        </View>
-
-        <View style={styles.form}>
-          <TextBox label="Confirme sua senha" isPassword={true} />
+          <TextBox label="CEP" />
         </View>
 
         <View style={styles1.form}>
           <TouchableOpacity
             style={[styles1.btn, { backgroundColor: COLORS.red }]}>
-            <Text style={styles1.btnText}>Proximo passo</Text>
+            <Text style={styles1.btnText}>Criar minha conta</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -47,7 +59,7 @@ function Register() {
 const styles1 = StyleSheet.create({
   btn: {
     width: '100%',
-    padding: 10,
+    padding: 15,
     borderRadius: 6,
     alignItems: 'center',
     justifyContent: 'center',
@@ -59,4 +71,4 @@ const styles1 = StyleSheet.create({
   },
 });
 
-export default Register;
+export default Register2;
