@@ -5,7 +5,7 @@ import Header from '../../components/header/header';
 import TextBox from '../../components/textbox/textbox';
 import { COLORS, FONT_SIZE } from '../../constants/theme';
 
-function Register() {
+function Register(props) {
   return (
     <View style={styles.container}>
       <Header text="Criar sua conta" />
@@ -28,18 +28,13 @@ function Register() {
         </View>
 
         <View style={styles1.form}>
-          <TouchableOpacity
+          <TouchableOpacity onPress={() => {props.navigation.navigate("register2")}}
             style={[styles1.btn, { backgroundColor: COLORS.red }]}>
             <Text style={styles1.btnText}>Proximo passo</Text>
           </TouchableOpacity>
         </View>
       </View>
-
-      <View style={styles.footer}>
-        <TouchableOpacity >
-          <Text style={styles.footerText}>Acessar minha conta</Text>
-        </TouchableOpacity>
-      </View>
+      
     </View>
   );
 }
@@ -47,7 +42,7 @@ function Register() {
 const styles1 = StyleSheet.create({
   btn: {
     width: '100%',
-    padding: 10,
+    padding: 15,
     borderRadius: 6,
     alignItems: 'center',
     justifyContent: 'center',

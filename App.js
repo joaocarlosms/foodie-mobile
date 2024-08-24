@@ -1,12 +1,10 @@
-import Login from "./src/screens/login/login.jsx";
-import Register from "./src/screens/register/register.jsx"
-import Register2 from "./src/screens/register2/register2.jsx";
+import Routes from "./src/routes/routes.js";
 
 
 export default function App() {
   return (
     <>
-      <Register2 />
+      <Routes />
     </>
   );
 }

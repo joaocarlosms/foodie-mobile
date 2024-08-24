@@ -5,7 +5,8 @@ export const styles = {
         flex: 1,
         padding: 40, 
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: COLORS.light_gray
     },
 
     form: {

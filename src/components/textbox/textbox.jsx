@@ -8,6 +8,8 @@ const TextBox = (props) => {
         <TextInput style={styles.input} 
             placeholder={props.placeholder}
             secureTextEntry={props.isPassword}
+            onChangeText={(text) => props.onChangeText(text)}
+            value={props.value}
         />
     </>
 }

@@ -46,12 +46,7 @@ function Register2() {
           </TouchableOpacity>
         </View>
       </View>
-
-      <View style={styles.footer}>
-        <TouchableOpacity >
-          <Text style={styles.footerText}>Acessar minha conta</Text>
-        </TouchableOpacity>
-      </View>
+      
     </View>
   );
 }
