@@ -1,5 +1,5 @@
 import { Image, View, Text } from 'react-native';
-import logo from '../../images/logo.png';
+import logo from '../../assets/logo.png';
 import { styles } from './header.style';
 
 const Header = (props) => (
