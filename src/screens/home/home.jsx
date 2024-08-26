@@ -1,11 +1,14 @@
 import { styles } from "./home.style";
-import { View, Image } from "react-native";
+import { View, Image, Text } from "react-native";
 import icons from "../../constants/icons"
 import { SafeAreaView } from "react-native-safe-area-context";
 import TextBox from "../../components/textbox/textbox.jsx";
 import React, { useState } from "react"
 import Categorias from "../../components/categorys/categorias.jsx";
-import { categorias } from "../../components/categorys/categorias.jsx";
+import Banners from "../../components/banners/banners.jsx";
+import { restaurantes } from "../../constants/dados.js";
+import Restaurante from "../../components/restaurante/restaurante.jsx";
+import { ScrollView } from "react-native";
 
 const Home = () => {
 
@@ -24,7 +27,25 @@ const Home = () => {
             />
         </View>
 
-        <Categorias />
+        <ScrollView showsVerticalScrollIndicator={false}>    
+            <Categorias />
+            
+            <Banners />
+
+            {
+                restaurantes.map((restaurante, index) => {
+                    return (
+                        <View key={index}>
+                            <Restaurante 
+                            logotipo={restaurante.logotipo}
+                            nome={restaurante.nome}
+                            endereco={restaurante.endereco} />
+                        </View>
+                    )
+                })
+            }
+        </ScrollView>
+
     </SafeAreaView>
     
 }

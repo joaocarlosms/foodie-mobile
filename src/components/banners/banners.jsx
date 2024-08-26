@@ -1,21 +1,19 @@
-import { View, Text, Image } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
 import { ScrollView } from "react-native";
 //import styles from "./categorias.style.js";
 import { COLORS, FONT_SIZE } from "../../constants/theme"
-import { TouchableOpacity } from "react-native";
-import { categorias } from "../../constants/dados.js";
+import { banners } from "../../constants/dados.js";
 
 const Categorias = () => {
     return (
         <View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 {
-                    categorias.map((categoria, index) => {
+                    banners.map((banner, index) => {
                         return (
-                            <View key={index} style={styles.categoria}>
+                            <View key={index} style={styles.banner}>
                                 <TouchableOpacity>
-                                    <Image style={styles.icon} source={categoria.icone}/>
-                                    <Text style={styles.descricao}>{categoria.descricao}</Text>
+                                    <Image style={styles.icon} source={banner.icone}/>
                                 </TouchableOpacity>
                             </View>    
                         );
@@ -29,12 +27,14 @@ const Categorias = () => {
 
 export const styles = {
     icon: {
-        width: 65,
-        height: 65,
+        width: 220,
+        height: 120
     },
 
-    categoria: {
-        paddingRight: 10
+    banner: {
+        paddingRight: 10,
+        marginTop: 15,
+        marginBottom: 15,
     },
     
     descricao: {
