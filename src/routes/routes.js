@@ -4,6 +4,7 @@ import Login from "../screens/login/login";
 import Register from "../screens/register/register";
 import Register2 from "../screens/register2/register2";
 import Home from "../screens/home/home";
+import Favorites from "../screens/favorites/favorites";
 
 const Stack = createNativeStackNavigator();
 
@@ -11,6 +12,16 @@ function Routes() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+
+                <Stack.Screen 
+                name="favorites" 
+                component={Favorites} 
+                options={{
+                    headerShown: true,
+                    title: "Favoritos",
+                    headerTitleAlign: "center",
+                    headerShadowVisible: false
+                }} />
 
                 <Stack.Screen 
                 name="home" 

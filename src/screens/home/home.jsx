@@ -39,7 +39,8 @@ const Home = () => {
                             <Restaurante 
                             logotipo={restaurante.logotipo}
                             nome={restaurante.nome}
-                            endereco={restaurante.endereco} />
+                            endereco={restaurante.endereco} 
+                            icon={icons.favoriteFull}/>
                         </View>
                     )
                 })
