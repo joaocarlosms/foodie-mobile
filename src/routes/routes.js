@@ -6,6 +6,7 @@ import Register2 from "../screens/register2/register2";
 import Home from "../screens/home/home";
 import Favorites from "../screens/favorites/favorites";
 import Orders from "../screens/orders/orders";
+import Profile from "../screens/profile/profile";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,15 @@ function Routes() {
         <NavigationContainer>
             <Stack.Navigator>
 
+                <Stack.Screen 
+                name="profile" 
+                component={Profile} 
+                options={{
+                    headerShown: true,
+                    title: "Meu Perfil",
+                    headerTitleAlign: "center",
+                    headerShadowVisible: false
+                }} />
 
                 <Stack.Screen 
                 name="orders" 

@@ -3,8 +3,8 @@ const COLORS = {
     dark_gray: "#5D6275",
     medium_gray: "#A6ABBC",
     gray: "#E5ECFC",
-    light_gray: "#fdfdfd",
-    white: "#F4F7FE",
+    light_gray: "#F4F7FE",
+    white: "#FFFFFF",
     green: "#38C682"
 }
 
