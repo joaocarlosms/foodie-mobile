@@ -8,6 +8,11 @@ import endereco from "../assets/endereco.png";
 import expandir from "../assets/expandir.png";
 import dados from "../assets/meus-dados.png";
 import logout from "../assets/logout.png";
+import abaFavorito from "../assets/aba-favorito.png";
+import abaHome from "../assets/aba-home.png";
+import abaPedidos from "../assets/aba-pedidos.png";
+import abaPerfil from "../assets/aba-perfil.png";
+
 
 export default { 
     back, 
@@ -19,5 +24,9 @@ export default {
     endereco,
     expandir,
     dados,
-    logout
+    logout,
+    abaFavorito,
+    abaHome,
+    abaPedidos,
+    abaPerfil
 };

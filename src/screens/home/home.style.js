@@ -4,7 +4,8 @@ export const styles = {
     container: {
         flex: 1,
         backgroundColor: COLORS.light_gray,
-        padding: 12
+        paddingLeft: 12,
+        paddingRight: 12
     },
 
     headerBar: {
