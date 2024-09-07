@@ -16,41 +16,6 @@ function Routes() {
             <Stack.Navigator>
 
                 <Stack.Screen 
-                name="profile" 
-                component={Profile} 
-                options={{
-                    headerShown: true,
-                    title: "Meu Perfil",
-                    headerTitleAlign: "center",
-                    headerShadowVisible: false
-                }} />
-
-                <Stack.Screen 
-                name="orders" 
-                component={Orders} 
-                options={{
-                    headerShown: true,
-                    title: "Meus Pedidos",
-                    headerTitleAlign: "center",
-                    headerShadowVisible: false
-                }} />
-
-                <Stack.Screen 
-                name="favorites" 
-                component={Favorites} 
-                options={{
-                    headerShown: true,
-                    title: "Favoritos",
-                    headerTitleAlign: "center",
-                    headerShadowVisible: false
-                }} />
-
-                <Stack.Screen 
-                name="home" 
-                component={Home} 
-                options={{headerShown: false}} />
-
-                <Stack.Screen 
                 name="login" 
                 component={Login} 
                 options={{headerShown: false}} />
